@@ -1,0 +1,27 @@
+@import url("./styles.css");
+
+.Contact_data {
+  text-align: center;
+}
+
+.Logo {
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  transition: all 0.3s ease; /* Animation douce */
+  margin: 20px;
+}
+
+.Logo:hover {
+  transform: scale(1.3); /* Grandit de 30% au survol */
+  opacity: 0.8; /* Légèrement transparent */
+}
+
+.Contact {
+  text-align: center;
+}
+
+.Little_man {
+  text-align: right;
+  width: 100%;
+}

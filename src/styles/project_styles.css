@@ -1,0 +1,50 @@
+@import url("./styles.css");
+
+/* Comment on peut mettre cees petites cases au centre de l'écran.. */
+.Project_data {
+  text-align: center;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 12px;
+  padding: 20px;
+
+  display: inline-block;
+  position: relative;
+  margin: 20px;
+  cursor: pointer;
+
+  animation: float 4.3s ease-in-out infinite;
+  box-shadow: 0 20px 8px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.Project_data:hover {
+  animation: floatReduced 1s ease-in-out infinite; /* Plus rapide : 2s au lieu de 4.3s */
+  box-shadow: 0 25px 12px rgba(0, 0, 0, 0.4); /* Ombre plus marquée */
+}
+
+@keyframes floatReduced {
+  0%,
+  100% {
+    transform: translateY(-15px); /* Reste plus haut */
+  }
+  50% {
+    transform: translateY(
+      -20px
+    ); /* Mouvement réduit (seulement 5px au lieu de 10px) */
+  }
+}
+
+.Project_position {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,31 @@
+Comment commencer depuis codesandbox
+
+# 1. Nettoie tout
+rm -rf node_modules package-lock.json
+
+# 2. Vide le cache
+npm cache clean --force
+
+# 3. Installe
+npm install --legacy-peer-deps
+
+Vérifie que react-scripts est là :
+ls node_modules/.bin/ | grep react
+
+Commencer :
+npm start
+
+Si marche tjrs pas : 
+npm install ajv@8 ajv-keywords@5 --legacy-peer-deps
+
+
+
+
+
+
+
+
+
+
+
+

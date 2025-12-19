@@ -1,0 +1,21 @@
+@import url("./styles.css");
+
+.Bar {
+  position: fixed; /* Reste fixe lors du scroll */
+  top: 0; /* Collée en haut */
+  left: 0; /* Collée à gauche */
+  width: 100%; /* Prend toute la largeur */
+  height: 60px; /* Hauteur de la barre */
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* En attendant on met un h2. PAr contre j'imagine que je modifierais, et remplacerait par d'autres, c'est juste : le temps de.. (Par exemple, je pourrais faire : ".bar .About" et modifier chaque truc individuellement, pour pouvoir donner de l'ordre à tous ces mots. (Genre Charles,au début, et le reste vers la fin, tout en implémentant des efftets */
+.Bar h2 {
+  cursor: pointer;
+  color: white;
+  font-family: Arial, sans-serif;
+}
