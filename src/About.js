@@ -7,7 +7,7 @@ class About_Video extends Component {
     return (
       <div>
         <video
-          src="/video/Avant-première.mp4"
+          src="video/Avant-première.mp4"
           className="fullscreen-video"
           autoPlay
           muted
